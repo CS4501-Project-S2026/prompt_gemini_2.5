@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Prompts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Daily Art Prompts</h1>
+        <nav>
+            {% if 'user_id' in session %}
+                <a href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('register') }}">Register</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        <div class="prompt-list">
+            {% for prompt in prompts %}
+                <div class="prompt-item">
+                    <h2><a href="{{ url_for('prompt', prompt_id=prompt[0]) }}">{{ prompt[1] }}</a></h2>
+                    <p>{{ prompt[2] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

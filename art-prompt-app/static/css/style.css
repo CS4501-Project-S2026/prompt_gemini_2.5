@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    background-color: #e0f2f1;
+    color: #004d40;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.prompt-list .prompt-item {
+    background-color: #ffffff;
+    border-left: 5px solid #004d40;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.response-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.response-form textarea,
+.response-form input,
+.login-form input,
+.register-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.response-form button,
+.login-form button,
+.register-form button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.responses .response-item {
+    background-color: #ffffff;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.responses .response-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
