@@ -39,3 +39,10 @@ Run the Flask App: Execute the app.py script.
 python app.py
 
 Access the Website: Open your web browser and go to http://127.0.0.1:5000/.
+
+
+Notes from when I ran it
+- I used a virtual enviroment, gemini 2.5 pro did not suggest this
+- database.db file could be created
+- app.py could be executed
+- no changes needed to run
